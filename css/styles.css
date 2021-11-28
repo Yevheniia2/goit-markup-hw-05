@@ -131,6 +131,10 @@ nav{
     padding-bottom: 32px;
 }
 
+.current{
+    color: var(--accent-color);
+}
+
 .contacts-list{
     list-style: none;
     display: flex;
@@ -580,10 +584,19 @@ address{
     height: 30px;
     right: 8px;
     top: 8px;
-    background: #FFFFFF;
+    background: transparent;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.modal-window-close-icon{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
 
 /* Portfolio buttons styles */
