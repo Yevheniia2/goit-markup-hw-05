@@ -47,7 +47,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- Секция профиль -->
@@ -91,9 +91,15 @@
             <div class="container">
                 <h2 class="our-profile-second-title">Чем мы занимаемся</h2>
                 <ul class="our-profile-list-images">
-                    <li class="our-profile-images-img"><img  src="./images/coding.jpg"  alt="Разработчик набирает код"  width="370"/></li>
-                    <li class="our-profile-images-img"><img  src="./images/mobile-apps.jpg"  alt="Разработчик тестирует мобильное приложение"  width="370"/></li>
-                    <li class="our-profile-images-img"><img  src="./images/web-apps.jpg"  alt="Разработчик тестирует веб приложение"  width="370"/></li>   
+                    <li class="our-profile-images-img"><img  src="./images/coding.jpg"  alt="Разработчик набирает код"  width="370"/>
+                        <p class="our-profile-images-text">Десктопные приложения</p>
+                    </li>
+                    <li class="our-profile-images-img"><img  src="./images/mobile-apps.jpg"  alt="Разработчик тестирует мобильное приложение"  width="370"/>
+                        <p class="our-profile-images-text">Мобильные приложения</p>
+                    </li>
+                    <li class="our-profile-images-img"><img  src="./images/web-apps.jpg"  alt="Разработчик тестирует веб приложение"  width="370"/>
+                        <p class="our-profile-images-text">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -353,14 +359,15 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
-            <button type="button" class="modal-window-close">
-                <svg class="modal-window-close-icon" width="11" height="11">
-                    <use href="./images/new-sprite.svg#icon-Exit"></use>
+            <button type="button" class="modal-window-close" data-modal-close>
+                <svg class="modal-window-close-icon" width="18" height="18" >
+                    <use href="./images/new-sprite.svg#icon-close-black"></use>
                 </svg>
             </button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
