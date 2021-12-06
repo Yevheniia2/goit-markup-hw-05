@@ -581,6 +581,70 @@ address{
     background-color: var(--accent-color);
 }
 
+/* Subscribe form styles */
+
+.subscribe{
+    margin-left: 93px;
+}
+
+.subscribe-form{
+    display: flex;
+}
+
+.subscribe-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.subscribe-input{
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-top: 20px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--hero-background-color);
+}
+
+.subscribe-button{
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--primary-white-color);
+    fill: white;
+    background-color: var(--accent-color);
+    padding: 10px 28px 10px 29px;
+    border-style: none;
+    border-radius: 4px;
+}
+
+.subscribe-button-send{
+    margin-left: 10px;
+}
+
 /* Modal window styles */
 
 .backdrop{
@@ -613,6 +677,7 @@ address{
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 40px 39px 40px 41px;
 }
 
 .modal-window-close{
@@ -635,6 +700,96 @@ address{
 .backdrop.is-hidden .modal-window{
     transform: translate(-50%, -50%) scale(1.15);
 }
+
+.modal-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+}
+
+.modal-label{
+    margin: 10px 0 4px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.modal-label-input{
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px 0 4px 0;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-agreement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-label-icon{
+    fill: var(--title-text-color);
+}
+
+.modal-agreement-text{
+    margin-left: 8.38px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+
+.modal-agreement-link{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    color: var(--accent-color);
+}
+
+.modal-button{
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 124px;
+}
+
 /* Portfolio buttons styles */
 
 .portfolio-menu{
