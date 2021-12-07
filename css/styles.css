@@ -677,7 +677,7 @@ address{
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 40px 39px 40px 41px;
+    padding: 40px;
 }
 
 .modal-window-close{
@@ -697,6 +697,14 @@ address{
     cursor: pointer;
 }
 
+.modal-window-close-icon{
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window-close-icon:hover{
+    fill: var(--accent-color);
+}
+
 .backdrop.is-hidden .modal-window{
     transform: translate(-50%, -50%) scale(1.15);
 }
@@ -709,7 +717,7 @@ address{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 2px;
 }
 
 .modal-label{
@@ -722,6 +730,27 @@ address{
     color: #757575;
 }
 
+.modal-label-field{
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-label-field:focus{
+    color: var(--accent-color);
+}
+
+.modal-label-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-label-icon:focus{
+    fill: var(--accent-color);
+}
+
 .modal-label-input{
     width: 448px;
     height: 40px;
@@ -730,14 +759,38 @@ address{
     border-radius: 4px;
 }
 
+.modal-label-input:focus{
+    border-color: var(--accent-color);
+}
+
+
+.textarea-label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+    margin: 10px 0 4px 0;
+}
+
 textarea{
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    margin: 10px 0 4px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:focus{
+    border-color: var(--accent-color);
 }
 
 .modal-agreement{
@@ -747,16 +800,37 @@ textarea{
     margin-top: 20px;
 }
 
-.modal-label-icon{
-    fill: var(--title-text-color);
-}
-
-.modal-agreement-text{
-    margin-left: 8.38px;
+.checkbox{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    text-align: center;
+    list-style: none;
     color: var(--primary-text-color);
+}
+
+.checkbox:checked + .policy .modal-agreement-svg{
+    background: var(--accent-color);
+    border: 0;
+}
+
+.policy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-agreement-svg{
+    width: 16px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-left: 12px;
+    margin-right: 8.38px;
 }
 
 .modal-agreement-link{
